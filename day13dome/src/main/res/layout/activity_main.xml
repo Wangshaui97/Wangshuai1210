@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+
+    <EditText
+        android:id="@+id/putinname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入账号"
+        />
+    <EditText
+        android:id="@+id/putinpwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入密码"
+        android:password="true"
+        app:layout_constraintTop_toBottomOf="@id/putinname"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/putinpwd"
+        android:id="@+id/login"
+        android:text="登录"
+        />
+    <TextView
+        android:id="@+id/zhuce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="使用手机号注册"
+        android:textColor="#000"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/login"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/wangji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="忘记密码"
+        android:textColor="#000"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/login"
+        app:layout_constraintRight_toRightOf="@id/putinpwd"
+        android:layout_marginTop="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/threelogin"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@drawable/umeng_socialize_qq"
+        />
+
+
+</android.support.constraint.ConstraintLayout>
